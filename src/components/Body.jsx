@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import ProductContainer from '../containers/ProductContainer';
-import Message from './message';
-import Cart from './Cart';
 class Body extends Component {
     state = {  }
     render() { 

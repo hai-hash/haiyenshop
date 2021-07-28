@@ -1,5 +1,4 @@
 
-import * as actions from './../actions/index';
 var initialState=[
     {
         id:1,

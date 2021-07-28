@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 class Product extends Component {
     render() { 
-        var {id,name,description,image,price,inventory,images} = this.props;
+        var {name,description,price,images} = this.props;
         var genImage = images.map((image,index) =>{
             var setClass = index === 0 ? "carousel-item active" : "carousel-item";
             
             return <div key={index} className={setClass}>
-                        <img className="d-block w-100 h-100" src={image}  />
+                        <img className="d-block w-100 h-100" src={image} alt="ảnh"  />
                     </div>;
         });
 
@@ -36,14 +36,14 @@ class Product extends Component {
 
 
 
-                    <a>
+                    <a href="https://www.facebook.com/yel.hail.3">
                         <div className="mask waves-light waves-effect waves-light"></div>
                     </a>
                 </div>
                 <div className="card-body">
                     <h4 className="card-title">
                         <strong>
-                            <a>{name}</a>
+                            <a href="https://www.facebook.com/yel.hail.3">{name}</a>
                         </strong>
                     </h4>
                     <ul className="rating">
@@ -69,7 +69,7 @@ class Product extends Component {
                     <div className="card-footer">
                         <span className="left">{price}.Vnđ</span>
                         <span className="right">
-                            <a className="btn-floating blue-gradient" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Cart">
+                            <a  href="https://www.facebook.com/yel.hail.3" className="btn-floating blue-gradient" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add to Cart">
                                 <i className="fa fa-shopping-cart"></i>
                             </a>
                         </span>
